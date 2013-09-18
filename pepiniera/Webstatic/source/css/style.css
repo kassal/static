@@ -1,0 +1,61 @@
+nav{
+	position: relative;
+	font-family:Trebuchet MS, arial;
+	margin-top: 25px;
+	height:50px;
+	width:1024px;
+	padding:0;
+	font-weight:bold;
+	float: left;
+	background:#003300;
+	font-weight: bold;
+	font-size: 17px;
+	margin: 0;
+}
+nav ul:hover {
+	/*list-style: none outside none;
+	background:#003300;*/
+	line-height: 15px;
+	text-align: center;
+	left: -999em;  /*On expédie les sous-listes hors du champ de vision 
+	left: auto;*/
+	min-height: 5em;
+}
+nav a{
+	text-align:center;
+	width:auto;
+	display : block;
+	color: whitesmoke;
+	text-decoration : none;
+	margin-top: 10px;
+	margin-left:70px;
+    padding: 0;
+    width: 100px;
+    text-transform: uppercase;
+}
+nav li{
+	color:#fff;
+	text-transform:uppercase;
+	text-align: center;
+	text-decoration:none;
+    list-style:none ;
+	display:block;
+	float:left;
+	padding:0;
+	height:55px;
+    margin-left:50px;
+	font-size:16px;
+}
+/*nav li ul{
+	/*position: absolute;
+	width: 50px;
+	left: -999em;
+}*/
+nav a:hover{
+	color: #000;
+}
+nav li:hover ul{/* Sous-listes lorsque la souris passe sur un élément de liste */
+	left: -999em;  /*On expédie les sous-listes hors du champ de vision */
+	left: auto;
+	min-height: 5em;
+}

@@ -1,0 +1,216 @@
+body{
+	background-repeat: no-repeat;
+	background-image: url("../img/background_maquette2.jpg");
+	background-position: center;
+	font-family:Trebuchet MS, arial;
+	margin: auto;
+	padding: 0;
+	width: 1024px;
+	height: 960px;
+}
+/*debut header*/
+header{
+	height:200px;
+	padding:0;
+}
+.logo img{
+	height: 100px;
+	width: 270px;
+	margin-top: 30px;
+	margin-left: 40px;
+}
+
+/*debut MENU*/
+
+#menu{
+	width:1024px;
+	margin-top: 37px;
+}
+nav{
+	display: inline-block;
+	background:#003300;
+	font-size: 17px;
+	height:50px;
+	width:1024px;
+	font-weight: bold ;
+}
+nav, nav ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 50px;
+	text-align: center;
+}
+nav a{
+	display: block;
+    padding: 0;
+    text-decoration: none;
+    width: 150px;
+    font-weight: normal;
+    text-transform: uppercase;
+	margin-left: 80px;
+	color: white;
+}
+nav li{
+	float: left;
+}
+.sous-menu a{
+	color: black;
+}
+.sous-menu a:hover{
+	color: white;
+}
+nav li ul{
+	position: absolute;
+	width: 100px;
+	left: -999em;
+	font-weight: bold;
+}
+nav a:hover{
+	background: #5b9117;
+}
+nav li:hover ul{
+	left: auto;
+	min-height: 5em;
+}
+
+/*fin MENU*/
+
+/*fin header*/
+
+/*debut partie centrale*/
+section{
+	z-index: 1;
+	background-color: #ffffcc;
+	width:1024px;
+	height: 590px;
+}
+#texte{
+	margin-top: 15px;
+}
+#texte h1{
+	font-size: 25px;
+}
+#presentation{
+	margin-left: 40px;
+	display: inline-block;
+}
+#astuce{
+	float: right;
+	margin-right: 90px;
+	display: inline-block;
+}
+#astuce img{
+	float: left;
+	width:50px;
+	height: 50px;
+}
+div#titre_astuce{
+	margin-left: 100px;
+    text-transform: uppercase;
+}
+#galerie_fruits{
+	display: block;
+	float: left;
+}
+div#galerie{
+	height: 300px;
+	margin-top: 90px;
+}
+div#galerie h1{
+    text-transform: uppercase;
+	display: inline-block;
+	float: left;
+    text-decoration: none;
+    color: black;
+	font-size: 30px;
+	margin-left: 90px;
+	width: 200px;
+}
+div#galerie img{
+	float: left;
+	margin-left: 20px;
+	width: 140px;
+	height: 110px;
+}
+#galerie_fruits{
+	display: inline-block;
+	float: left;
+}
+#galerie_legumes{
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+}
+#galerie_arbres{
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+}
+/*debut contact*/
+
+#adresse{
+	text-align: center;
+}
+#map{
+	float: left;
+	margin-left: 70px;
+}
+.form{
+	float: left;
+	margin-left: 25px;
+}
+.form p{
+	width: 300px;
+	clear: left;
+	margin: 0;
+	padding: 5px 0 8px 0;
+	padding-left: 155px; /*width of left column containing the label elements*/
+	border-top: 1px dashed gray;
+	height: 1%;
+}
+
+.form label{
+	font-weight: bold;
+	float: left;
+	margin-left: -155px; /*width of left column*/
+	width: 150px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
+}
+
+.form input[type=&quot;text&quot;]{ /*width of text boxes. IE6 does not understand this attribute*/
+	width: 180px;
+}
+
+.form textarea{
+	width: 250px;
+	height: 150px;
+}
+
+/*fin contact*/
+
+/*fin partie centrale*/
+
+/*debut footer*/
+footer{
+	background-color: #003300;
+	width:1024px;
+	height: 170px;
+	padding:0px;
+}
+footer a{
+	text-decoration : none;
+	color: whitesmoke;
+}
+#mention{
+	color:#fff;
+	float: left;
+	margin-top: 40px;
+	margin-left: 200px;
+}
+#tel{
+	color:#fff;
+	float: right;
+	margin-top: 40px;
+	margin-right: 200px;
+}
+/*fin footer*/

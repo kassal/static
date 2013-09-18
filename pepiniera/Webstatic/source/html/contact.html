@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Pépinièra</title>
+    <link rel="shortcut icon" href="../img/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="../css/style3.css"/>
+</head>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ_Wdwuse4ksbl5kUa0uuduVpguGXfB-A&sensor=true"></script>
+<script type="text/javascript">
+	function initialize() {
+		var mapOptions = {
+			center: new google.maps.LatLng(-12.92538476, 45.10407507),
+			zoom: 18,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+	}
+</script>
+
+<body onload="initialize()">
+	<header>
+		<div class="logo"><img src="../img/logo_color_blanc.png"></div>
+		<div id="menu">
+			<nav>
+				<ul id="menu_liste">
+					<li><a href="../index.html"><img src="../img/home.png"> Accueil</a></li>
+			 		<li><a href="./presentation.html">Presentation</a></li>
+			 		<li>
+			 			<a href="">Produits</a>
+			 			<ul class="sous-menu">
+			 				<li><a href="./fruits.html">Les Fruits</a></li>
+				        	<li><a href="./legumes.html">Les Légumes</a></li>
+				        	<li><a href="./arbres.html">Les Arbres</a></li>
+				        </ul>
+				    </li>
+				    <li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<section>
+		<div id="adresse">
+			<p><br />Quartier cavani M'Zouasia</p>
+			97620 BOUENI
+			MAYOTTE
+			<p>Tel: 0269 62 06 37 <br />
+			   Port: 0692 09 92 56</p>
+		</div>
+		<div >
+			<form class="form" action="traitement-contact.php" enctype="text/plain" method="post"  autocomplete="on">
+				<p><label for="nom">Nom :</label>
+				<input type="text" id="nom" value="" /></p>
+
+				<p><label for="prenom">Prénom :</label>
+				<input type="text" id="prenom" value="" /></p>
+
+				<p><label for="mail">Email :</label>
+				<input type="text" id="mail" value="" /></p>
+
+				<p><label for="comment">Message :</label>
+				<textarea id="comment" rows="5" cols="25"></textarea></p>
+
+				<p><div style="margin-left: 150px;">
+					<input type="submit" value="Envoyer" />
+					<input type="reset" value="Annuler" />
+				</div></p>
+			</form>
+		</div>
+		<div id="map">
+			<iframe width="450" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;q=Mzouazia,+Bou%C3%A9ni,+Mayotte&amp;aq=&amp;sll=46.75984,1.738281&amp;sspn=8.324585,21.643066&amp;ie=UTF8&amp;geocode=Fd68Ov8dETuwAg&amp;split=0&amp;hq=&amp;hnear=Mzouazia,+Bou%C3%A9ni,+Mayotte&amp;t=h&amp;ll=-12.924851,45.104252&amp;spn=0.002614,0.002414&amp;z=18&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;q=Mzouazia,+Bou%C3%A9ni,+Mayotte&amp;aq=&amp;sll=46.75984,1.738281&amp;sspn=8.324585,21.643066&amp;ie=UTF8&amp;geocode=Fd68Ov8dETuwAg&amp;split=0&amp;hq=&amp;hnear=Mzouazia,+Bou%C3%A9ni,+Mayotte&amp;t=h&amp;ll=-12.924851,45.104252&amp;spn=0.002614,0.002414&amp;z=18&amp;iwloc=A" style="color:#0000FF;text-align:left">Agrandir le plan</a></small>
+		</div>
+		    
+	</section>
+	
+	<footer>
+		<div id="mention">
+			<p><a href="#">Mentions Légales</a></p>
+			<a href="#">Plan du site</a>
+		</div>
+		<div id="tel">
+			<p>Tel: 0269 62 06 37</p>
+			Port: 0692 09 92 56
+		</div>
+	</footer>
+</body>
+</html>
